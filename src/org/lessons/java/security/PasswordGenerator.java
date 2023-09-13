@@ -27,6 +27,8 @@ public class PasswordGenerator {
 		int year = Integer.parseInt(splitDoB[2]);
 		int sumDoB = day + month + year;
 		
+		sc.close();
+		
 		String password = userName + '-' + userLastname + '-' + favColor + '-' + sumDoB;
 		System.out.println("La tua password è: " + password);
 	}
